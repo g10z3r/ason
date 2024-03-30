@@ -1,4 +1,7 @@
-# ASON 
+<p align="center"><img height="200" src="https://raw.githubusercontent.com/g10z3r/ason/main/assets/banner.png"></p>
+
+<h1 align="center">ASON</h1>
+<p align="center">Go AST to JSON, with support for converting back to Go code </p>
 
 The library is a tool for serializing abstract syntax trees (AST) in Go and deserializing them back into Go code. This tool is designed to simplify working with AST in Go, enabling easy conversion of code structures into a serialized format and vice versa. This provides a convenient mechanism for analyzing, modifying, and generating Go code.
 
