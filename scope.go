@@ -1,7 +1,6 @@
 package ason
 
 import (
-	"go/ast"
 	"go/token"
 	"strconv"
 )
@@ -165,16 +164,6 @@ var tokens = map[string]token.Token{
 	"var":    token.VAR,
 
 	"~": token.TILDE,
-}
-
-var objKinds = map[string]ast.ObjKind{
-	"bad":     ast.Bad,
-	"package": ast.Pkg,
-	"const":   ast.Con,
-	"type":    ast.Typ,
-	"var":     ast.Var,
-	"func":    ast.Fun,
-	"label":   ast.Lbl,
 }
 
 type Object struct {

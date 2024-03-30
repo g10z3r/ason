@@ -1,7 +1,6 @@
 package ason
 
 import (
-	"errors"
 	"go/ast"
 	"go/parser"
 	"go/token"
@@ -19,30 +18,6 @@ const (
 	testName = "testName"
 	testType = "testType"
 )
-
-var (
-	testValueSpecs = []*ast.ValueSpec{
-		{
-			Names: []*ast.Ident{{Name: testName}},
-			Type:  &ast.Ident{Name: testType},
-			Values: []ast.Expr{
-				&ast.BinaryExpr{
-					X: &ast.Ident{Name: "iota"},
-					Y: &ast.BasicLit{Kind: token.INT, Value: "2"},
-				},
-			},
-		},
-		{
-			Names:  []*ast.Ident{{Name: testName}},
-			Type:   nil,
-			Values: nil,
-		},
-	}
-)
-
-func mockReadFileWithErr(name string) ([]byte, error) {
-	return nil, errors.New("test error")
-}
 
 func TestNewSerPass(t *testing.T) {
 	t.Run("valid: creation of pass without any params", func(t *testing.T) {
