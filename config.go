@@ -13,7 +13,7 @@ const (
 	// and declarations.
 	CacheRef
 
-	// SkipComments will don't serialize any comments declarations
+	// SkipComments will not serialize any comments declarations
 	SkipComments
 
 	// ResolveObject identifiers to objects
