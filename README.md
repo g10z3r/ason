@@ -1,4 +1,4 @@
-<p align="center"><img height="200" src="https://raw.githubusercontent.com/g10z3r/ason/main/assets/banner.png"></p>
+<p align="center"><img src="assets/banner.png"></p>
 
 <h1 align="center">ASON</h1>
 <p align="center">Go AST to JSON, with support for converting back to Go code </p>
